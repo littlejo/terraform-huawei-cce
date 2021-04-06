@@ -36,9 +36,9 @@ resource "huaweicloud_cce_node_pool" "this" {
 }
 
 resource "huaweicloud_cce_addon" "this" {
-    cluster_id    = huaweicloud_cce_cluster.this.id
-    template_name = "metrics-server"
-    version       = "1.0.5"
+  cluster_id    = huaweicloud_cce_cluster.this.id
+  template_name = "metrics-server"
+  version       = "1.0.5"
 }
 
 # TODO
